@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Form</title>
+    <script src="script.js"></script>
+</head>
+<body onload="onLoad()" >
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#images">Images</a></li>
+            <li class="dropdown">
+                <a >Themes</a>
+                <div class="dropdown-content">
+                    <a class="" onclick="dark()">Dark</a>
+                    <a href="">Cool</a>
+                    <a onclick="cool()">Joker</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="home" id="home">
+        <h1>UIT ASSIGNMENT 2</h1>
+        <h5>Done By</h5>
+        <h3>HARIKISHORE B(52)</h3>
+        <h3>DEVPRASATH(36)</h3>
+    </div>
+    <hr  id="form"/>
+    <div class="card">
+        <form action="../index.html" onsubmit="return onvalidate()">
+            <label>Name</label> 
+            <input id="name" placeholder="Enter Your Name" required name="name" type="text" />
+            <br>
+            <label>Age</label>
+            <input id="age" placeholder="Enter Your Age" required name="age" min="0" max="150" type="number" />
+            <br>
+            <label>Email</label>
+            <input id="email" placeholder="Enter Your Email" required name="email" type="email" />
+            <br>
+            <label>Mobile Number</label>
+            <input id="mobile" placeholder="Enter Your Mobile Number" required name="mobile" type="tel" />
+            <br>
+            <label>Date Of Birth</label>
+            <input id="dob" required name="dob"type="date" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <hr id="images"/>
+    <div class="images" >
+    <button onclick="slide('backward')" class="left-btn"><</button>
+    <img id="image" src="../img1.jpg" />
+    <button onclick="slide('forward')" class="right-btn">></button>
+    </div>
+</body>
+</html>

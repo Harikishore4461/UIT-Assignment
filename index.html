@@ -16,8 +16,8 @@
             <li class="dropdown">
                 <a >Themes</a>
                 <div class="dropdown-content">
-                    <a class="" onclick="dark()">Dark</a>
-                    <a href="">Cool</a>
+                    <a onclick="dark()">Dark</a>
+                    <a onclick="norm()">Cool</a>
                     <a onclick="cool()">Joker</a>
                 </div>
             </li>
@@ -27,11 +27,11 @@
         <h1>UIT ASSIGNMENT 2</h1>
         <h5>Done By</h5>
         <h3>HARIKISHORE B(52)</h3>
-        <h3>DEVPRASATH(36)</h3>
+        <h3>DEVPRASATH R(36)</h3>
     </div>
     <hr  id="form"/>
     <div class="card">
-        <form action="../index.html" onsubmit="return onvalidate()">
+        <form onsubmit="return onvalidate()">
             <label>Name</label> 
             <input id="name" placeholder="Enter Your Name" required name="name" type="text" />
             <br>
@@ -52,7 +52,7 @@
     <hr id="images"/>
     <div class="images" >
     <button onclick="slide('backward')" class="left-btn"><</button>
-    <img id="image" src="../img1.jpg" />
+    <img id="image" src="./img1.jpg" />
     <button onclick="slide('forward')" class="right-btn">></button>
     </div>
 </body>
